@@ -35,7 +35,7 @@ When something bothers us, or we think we can do it better, we build it.
 <td align="center" nowrap><a href="https://suckerpot.selfhostr.io">Website</a> · <a href="https://github.com/selfhostr/suckerpot">Source</a></td>
 </tr>
 <tr>
-<td align="center"><a href="https://djsnake.selfhostr.io"><img src="assets/djsnake.png" alt="djsnake" width="56" height="56"></a></td>
+<td align="center"><a href="https://djsnake.selfhostr.io"><img src="assets/djsnake.svg" alt="djsnake" width="56" height="56"></a></td>
 <td><strong><a href="https://djsnake.selfhostr.io">djsnake</a></strong><br>A Discord music bot for your own server, with the video and the lyrics in sync on a web page.</td>
 <td align="center" nowrap><a href="https://djsnake.selfhostr.io">Website</a> · <a href="https://github.com/selfhostr/djsnake">Source</a></td>
 </tr>
