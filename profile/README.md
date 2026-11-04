@@ -1,6 +1,6 @@
 # selfhostr
 
-Two sysadmins, small self-hosted tools that make life simpler. **[selfhostr.io](https://selfhostr.io)**
+Two sysadmins. We build self-hosted tools for the problems we run into and think we can do better. **[selfhostr.io](https://selfhostr.io)**
 
 | Project | What it does |
 |---|---|
