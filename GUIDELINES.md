@@ -403,11 +403,6 @@ Every README has the same shape and stays short, about 150 lines at most: detail
 
 <h3>One sentence that says what it is.</h3>
 
-<a href="https://<name>.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-site.svg" alt="Website" height="40"></a>
-<a href="https://<name>.selfhostr.io/docs/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-docs.svg" alt="Documentation" height="40"></a>
-<a href="https://<name>.selfhostr.io/demo/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-demo.svg" alt="Live demo" height="40"></a>
-<a href="https://github.com/selfhostr/<name>/releases"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-releases.svg" alt="Releases" height="40"></a>
-
 <br><br>
 
 [CI badge] [OpenSSF Scorecard badge] [OpenSSF Best Practices badge, if the project has one] [MIT badge]
@@ -419,7 +414,7 @@ Every README has the same shape and stays short, about 150 lines at most: detail
 </div>
 ```
 
-   Banner: `.github/assets/banner.svg`, 1280 x 280, ground `#07080a` with the 44 px grid, project logo at the left, the name, a short tagline, "a selfhostr project" at the bottom right. Keep only the listed badges, in the default flat style: no language, test count, stack or version badges. Leave out the demo or releases button if the project has neither.
+   Banner: `.github/assets/banner.svg`, 1280 x 280, ground `#07080a` with the 44 px grid, project logo at the left, the name, a short tagline, "a selfhostr project" at the bottom right. Keep only the listed badges, in the default flat style: no language, test count, stack or version badges. No row of buttons in the header: the live demo link lives in the body of the README, at the start of Quick start.
 2. **Overview**: 3 bullets. End with "Free, for good. MIT licence, no paid edition."
 3. **Quick start**: Docker commands, first login, what to do next. Where to back up.
 4. What it does / what it watches / features: concrete list.
