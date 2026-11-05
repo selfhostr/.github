@@ -73,6 +73,6 @@ and we are always honest about what a tool does and what it does not.
 
 <br>
 
-**[Visit selfhostr.io](https://selfhostr.io)** · **[Support the projects](https://selfhostr.io/#support)**
+**[Visit selfhostr.io](https://selfhostr.io)** · **[Support the projects](https://selfhostr.io/#support)** · **[Guidelines](https://github.com/selfhostr/.github/blob/main/GUIDELINES.md)**
 
 </div>
