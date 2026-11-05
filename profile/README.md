@@ -4,73 +4,75 @@
 
 <br>
 
-We are two sysadmins, and we don't work for big corporations.<br>
-When something bothers us, or we think we can do it better, we build it.
+### We are sysadmins. When something bothers us, we build it.
+
+<a href="https://selfhostr.io"><img src="https://img.shields.io/badge/website-selfhostr.io-2fd17c?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=17181c" alt="Website: selfhostr.io"></a>
+<a href="https://selfhostr.io"><img src="https://img.shields.io/badge/licence-MIT-34373e?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=17181c" alt="Licence: MIT"></a>
+<a href="https://selfhostr.io"><img src="https://img.shields.io/badge/runs%20on-Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white&labelColor=17181c" alt="Runs on Docker"></a>
+<a href="https://www.patreon.com/selfhostr"><img src="https://img.shields.io/badge/support-Patreon-f96854?style=for-the-badge&logo=patreon&logoColor=white&labelColor=17181c" alt="Support us on Patreon"></a>
 
 <br>
 
 <table>
 <tr>
-<td align="center" width="33%" valign="top">
-<br>
-<a href="https://github.com/selfhostr/dumbmonit"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/dumbmonit.svg" alt="DumbMonit" width="76" height="76"></a>
-<h3><a href="https://github.com/selfhostr/dumbmonit">DumbMonit</a></h3>
+<td width="88" align="center"><a href="https://dumbmonit.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/dumbmonit.svg" alt="" width="60" height="60"></a></td>
+<td>
+<h3><a href="https://dumbmonit.selfhostr.io">DumbMonit</a></h3>
 Monitoring in one container: servers, network gear, hypervisors, storage and websites.
 <br><br>
-<a href="https://github.com/selfhostr/dumbmonit"><b>Repository</b></a> · <a href="https://dumbmonit.selfhostr.io">Website</a>
-<br><br>
-</td>
-<td align="center" width="33%" valign="top">
-<br>
-<a href="https://github.com/selfhostr/orch"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/orch.png" alt="orch" width="76" height="76"></a>
-<h3><a href="https://github.com/selfhostr/orch">orch</a></h3>
-A shared to-do list for teams. Tasks run on a teammate's machine and come back as pull requests.
-<br><br>
-<a href="https://github.com/selfhostr/orch"><b>Repository</b></a> · <a href="https://orch.selfhostr.io">Website</a>
-<br><br>
-</td>
-<td align="center" width="33%" valign="top">
-<br>
-<a href="https://github.com/selfhostr/suckerpot"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/suckerpot.svg" alt="suckerpot" width="76" height="76"></a>
-<h3><a href="https://github.com/selfhostr/suckerpot">suckerpot</a></h3>
-A honeypot with one readable dashboard and twelve realistic sensors. Meant to be attacked.
-<br><br>
-<a href="https://github.com/selfhostr/suckerpot"><b>Repository</b></a> · <a href="https://suckerpot.selfhostr.io">Website</a>
-<br><br>
+<a href="https://dumbmonit.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/dumbmonit"><b>Repository</b></a> · <a href="https://dumbmonit.selfhostr.io/docs/">Docs</a>
+&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/dumbmonit?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of DumbMonit">
 </td>
 </tr>
 <tr>
-<td align="center" width="33%" valign="top">
-<br>
-<a href="https://github.com/selfhostr/djsnake"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/djsnake.svg" alt="djsnake" width="76" height="76"></a>
-<h3><a href="https://github.com/selfhostr/djsnake">djsnake</a></h3>
+<td width="88" align="center"><a href="https://suckerpot.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/suckerpot.svg" alt="" width="60" height="60"></a></td>
+<td>
+<h3><a href="https://suckerpot.selfhostr.io">SuckerPot</a></h3>
+An open-source honeypot that tells each attack in one sentence and reports the servers behind it.
+<br><br>
+<a href="https://suckerpot.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/suckerpot"><b>Repository</b></a> · <a href="https://suckerpot.selfhostr.io/docs/">Docs</a>
+&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/suckerpot?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of SuckerPot">
+</td>
+</tr>
+<tr>
+<td width="88" align="center"><a href="https://orch.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/orch.png" alt="" width="60" height="60"></a></td>
+<td>
+<h3><a href="https://orch.selfhostr.io">orch</a></h3>
+A shared to-do list for teams. Tasks run on a teammate's machine and come back as pull requests.
+<br><br>
+<a href="https://orch.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/orch"><b>Repository</b></a> · <a href="https://orch.selfhostr.io/docs/">Docs</a>
+&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/orch?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of orch">
+</td>
+</tr>
+<tr>
+<td width="88" align="center"><a href="https://djsnake.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/djsnake.svg" alt="" width="60" height="60"></a></td>
+<td>
+<h3><a href="https://djsnake.selfhostr.io">djsnake</a></h3>
 A Discord music bot for your own server, with the video and the lyrics in sync on a web page.
 <br><br>
-<a href="https://github.com/selfhostr/djsnake"><b>Repository</b></a> · <a href="https://djsnake.selfhostr.io">Website</a>
-<br><br>
+<a href="https://djsnake.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/djsnake"><b>Repository</b></a> · <a href="https://djsnake.selfhostr.io/docs/">Docs</a>
+&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/djsnake?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of djsnake">
 </td>
-<td align="center" width="33%" valign="top">
-<br>
-<a href="https://github.com/selfhostr/kegtrack"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/kegtrack.svg" alt="kegtrack" width="76" height="76"></a>
-<h3><a href="https://github.com/selfhostr/kegtrack">kegtrack</a></h3>
+</tr>
+<tr>
+<td width="88" align="center"><a href="https://kegtrack.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/kegtrack.svg" alt="" width="60" height="60"></a></td>
+<td>
+<h3><a href="https://kegtrack.selfhostr.io">kegtrack</a></h3>
 QR-code tracking for returnable kegs: every move in the cellar or at the customer is one scan.
 <br><br>
-<a href="https://github.com/selfhostr/kegtrack"><b>Repository</b></a> · <a href="https://kegtrack.selfhostr.io">Website</a>
-<br><br>
-</td>
-<td align="center" width="33%" valign="middle">
-<a href="https://github.com/laupernoe"><img src="https://github.com/laupernoe.png?size=120" alt="laupernoe" width="56" height="56"></a>&nbsp;&nbsp;<a href="https://github.com/Theroxat"><img src="https://github.com/Theroxat.png?size=120" alt="Theroxat" width="56" height="56"></a>
-<br><br>
-<a href="https://github.com/laupernoe">laupernoe</a> · <a href="https://github.com/Theroxat">Theroxat</a>
-<br><br>
-<a href="https://selfhostr.io"><b>selfhostr.io</b></a>
+<a href="https://kegtrack.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/kegtrack"><b>Repository</b></a> · <a href="https://kegtrack.selfhostr.io/docs/">Docs</a>
+&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/kegtrack?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of kegtrack">
 </td>
 </tr>
 </table>
 
 <br>
 
-Every project is open source under the MIT licence, and will stay open source and free.<br>
-Every project runs on Docker and is built to stay simple. We are always honest about what a tool does and what it does not.
+**Open source and free, and it stays that way.** Every project is built to stay simple,<br>
+and we are always honest about what a tool does and what it does not.
+
+<br>
+
+**[Visit selfhostr.io](https://selfhostr.io)** · **[Support the projects](https://selfhostr.io/#support)**
 
 </div>
