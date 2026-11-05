@@ -483,14 +483,22 @@ Outside the gate: CodeQL, a weekly Trivy scan of the published images and an OSV
 - **Best Practices**: every public repository earns the OpenSSF Best Practices badge (passing, then silver) and shows it in the README.
 - **Scorecard**: `scorecard.yml` runs on push to `main`, weekly and on branch-protection changes, publishes results, and the badge is in the README. Aim for 8 or more out of 10. The checks that matter most here: Pinned-Dependencies, Token-Permissions, Branch-Protection, Code-Review, Signed-Releases, Dependency-Update-Tool, SAST, Security-Policy, Vulnerabilities, License, Fuzzing.
 
+### 7.8 Sponsor button
+
+Money goes through GitHub Sponsors: [github.com/sponsors/selfhostr](https://github.com/sponsors/selfhostr).
+
+- Every repository shows the **Sponsor** button in its right-hand column. Turn it on with *Settings > General > Features > Sponsorships*.
+- Do not add a `FUNDING.yml` to a project: all repositories inherit `.github/FUNDING.yml` from this repository.
+- READMEs and docs mention GitHub Sponsors only. Crypto addresses stay on the sites (4.5).
+
 ## 8. New project checklist
 
 In this order.
 
 1. Pick a lowercase name; check `<name>.selfhostr.io`, `selfhostr/<name>` and `ghcr.io/selfhostr/<name>` are free.
 2. Choose an accent (3.2) and draw the logo on the 64 grid (3.3).
-3. Create the repository under `selfhostr` with MIT licence, `dev` as the working branch, rulesets (7.4) and security features on.
-4. Add the root files and `.github/` of 7.1, `CODEOWNERS` with both owners, README in the order of 7.2 including the Support section.
+3. Create the repository under `selfhostr` with MIT licence, `dev` as the working branch, rulesets (7.4), security features on and the Sponsor button on (7.8).
+4. Add the root files and `.github/` of 7.1, `CODEOWNERS` with both owners, README in the shape of 7.2, with its banner and the Support section.
 5. Make it run with `docker compose up -d` from a published image; write `.env.example`; add CI (7.5) with pinned actions (7.6) and the release workflow with SBOM, provenance and signatures.
 6. Write `docs/` and add the project config to the docs kit (section 5); check links.
 7. Build the site: tokens, top bar, hero with plates and rotating word, interactive animation, features with "what it does not do", download with Support block, footer and selfhostr bar, 404 (section 4).
@@ -498,6 +506,6 @@ In this order.
 9. Build the static demo with fictional data and its CSP (4.9).
 10. Run the checks: 390 px without horizontal scroll, keyboard only, reduced motion, contrast, headers, no inline style, no external request.
 11. Create the Cloudflare Pages project `<name>`, point `<name>.selfhostr.io` at it, deploy.
-12. Add the project to the selfhostr bar of every site, to the organization profile (`profile/README.md` in this repository) and to the hub site.
+12. Add the project to the hub site, to the organization profile (`profile/README.md` in this repository, with its logo in `profile/assets/` and in the banner) and to the table in `SECURITY.md`.
 13. Apply for the OpenSSF Best Practices badge, enable Scorecard, add both badges to the README.
 14. Tag `v0.1.0` from `main` only when the owners agree.
