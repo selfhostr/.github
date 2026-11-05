@@ -394,9 +394,34 @@ docker-compose.yml  Dockerfile  .env.example
 
 ### 7.2 README
 
-In this order:
+Every README has the same shape and stays short, about 150 lines at most: details belong in the docs, with a link. Use the same section names in this order, and the project name as written in section 2:
 
-1. Centered header: banner or logo, one-sentence description in bold, badges (CI, docs, OpenSSF Best Practices, OpenSSF Scorecard, MIT), links **Website** · **Documentation**, one screenshot.
+1. Centered header, in HTML, exactly this shape and nothing else in it:
+
+```html
+<div align="center">
+
+<a href="https://<name>.selfhostr.io"><img src=".github/assets/banner.svg" alt="<name>: <tagline>" width="100%"></a>
+
+<h3>One sentence that says what it is.</h3>
+
+<a href="https://<name>.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-site.svg" alt="Website" height="40"></a>
+<a href="https://<name>.selfhostr.io/docs/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-docs.svg" alt="Documentation" height="40"></a>
+<a href="https://<name>.selfhostr.io/demo/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-demo.svg" alt="Live demo" height="40"></a>
+<a href="https://github.com/selfhostr/<name>/releases"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-releases.svg" alt="Releases" height="40"></a>
+
+<br><br>
+
+[CI badge] [OpenSSF Scorecard badge] [OpenSSF Best Practices badge, if the project has one] [MIT badge]
+
+<br><br>
+
+<img src="docs/assets/screenshot.png" alt="..." width="100%">
+
+</div>
+```
+
+   Banner: `.github/assets/banner.svg`, 1280 x 280, ground `#07080a` with the 44 px grid, project logo at the left, the name, a short tagline, "a selfhostr project" at the bottom right. Keep only the listed badges, in the default flat style: no language, test count, stack or version badges. Leave out the demo or releases button if the project has neither.
 2. **Overview**: 3 bullets. End with "Free, for good. MIT licence, no paid edition."
 3. **Quick start**: Docker commands, first login, what to do next. Where to back up.
 4. What it does / what it watches / features: concrete list.
