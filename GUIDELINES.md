@@ -241,7 +241,7 @@ Links are 40 px tall, `14px` (last line `13px`). The hub (`selfhostr.io`) has no
 
 ### 4.5 Support block
 
-On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and in the README. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Sponsor us on GitHub** (`https://github.com/sponsors/selfhostr`) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
+On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`). Crypto addresses appear on the sites only, never in a repository. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Sponsor us on GitHub** (`https://github.com/sponsors/selfhostr`) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
 
 **Address component** (`.wl`, one markup and one script for all sites). No address appears in the HTML in clear text: each entry stores it Base64-encoded in `data-a`. Logos are monochrome (`currentColor`), never the brand colours. A click decodes the address, copies it, and shows it below the line so it can be checked.
 
@@ -255,8 +255,6 @@ On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and
 ```
 
 Entries are 44 px tall, radius 10, hairline border, logo 18 px. Addresses are taken from the organization's published list (see the README of any repository), never retyped.
-
-**Supporters** are named on the hub, in the support section, under "Supported by": name, link, country. There is no separate page.
 
 ### 4.6 Languages and URLs
 
@@ -436,13 +434,8 @@ Every README has the same shape and stays short, about 150 lines at most: detail
 
 <name> is free and has no company behind it. If it saves you time, you can support its development:
 
-- **GitHub Sponsors** (recurring or one-off): [github.com/sponsors/selfhostr](https://github.com/sponsors/selfhostr)
-- **Bitcoin**: `…`
-- **Ethereum**: `…`
-- **Solana**: `…`
+[Sponsor us on GitHub](https://github.com/sponsors/selfhostr), recurring or one-off.
 ```
-
-Copy the addresses from an existing repository README, never retype them.
 
 ### 7.3 Licence, contributing, security
 
