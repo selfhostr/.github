@@ -2,7 +2,7 @@
 
 How a selfhostr project looks, reads and is built. Written so that anyone, person or program, can start a new project that sits next to the existing ones without asking. Free to read and reuse.
 
-Reference implementations, all public: [dumbmonit](https://github.com/selfhostr/dumbmonit), [suckerpot](https://github.com/selfhostr/suckerpot), [orch](https://github.com/selfhostr/orch), [djsnake](https://github.com/selfhostr/djsnake), [kegtrack](https://github.com/selfhostr/kegtrack) and their sites, for example <https://orch.selfhostr.io> (view source, read `/assets/site.css`).
+Reference implementations, all public: [dumbmonit](https://github.com/selfhostr/dumbmonit), [suckerpot](https://github.com/selfhostr/suckerpot), [orch](https://github.com/selfhostr/orch), [djsnake](https://github.com/selfhostr/djsnake), [kegtrack](https://github.com/selfhostr/kegtrack), [dmsforall](https://github.com/selfhostr/dmsforall) and their sites, for example <https://orch.selfhostr.io> (view source, read `/assets/site.css`).
 
 Words: **must** is a rule, **should** is the default, **may** is free. Where existing projects differ, the section says so and gives the rule for new ones.
 
@@ -25,7 +25,7 @@ Words: **must** is a rule, **should** is the default, **may** is free. Where exi
 
 | Thing | Rule | Example |
 |---|---|---|
-| Project name in prose | As written in the README title. Lowercase for newer projects, product-cased for the two flagship names | `orch`, `djsnake`, `kegtrack`, DumbMonit, SuckerPot |
+| Project name in prose | As written in the README title. Lowercase for newer projects, product-cased for the two flagship names | `orch`, `djsnake`, `kegtrack`, `dmsforall`, DumbMonit, SuckerPot |
 | New project name | **Lowercase, one word, no hyphen, no version** | `orch` |
 | Repository | `github.com/selfhostr/<name>`, lowercase | `selfhostr/orch` |
 | Site | `<name>.selfhostr.io` | `https://orch.selfhostr.io` |
@@ -88,8 +88,9 @@ One hue per project, used for the logo, the rotating hero word, the focus of the
 | orch | `#e8743b` | `#f08a4b` | `232 116 59` |
 | djsnake | `#ff3b4e` | `#ff6b78` | `255 59 78` |
 | kegtrack | `#e8a317` | `#f4bb45` | `232 163 23` |
+| dmsforall | `#22b8cf` | `#66d9e8` | `34 184 207` |
 
-A new accent must be clearly distinct from the five above, reach 4.5:1 for `--accent-ink` on `--c-canvas`, and not be a status hue (no green close to `#2fd17c`, no red close to `#ff5c5c`).
+A new accent must be clearly distinct from the six above, reach 4.5:1 for `--accent-ink` on `--c-canvas`, and not be a status hue (no green close to `#2fd17c`, no red close to `#ff5c5c`).
 
 ### 3.3 Logo
 
@@ -240,7 +241,7 @@ Links are 40 px tall, `14px` (last line `13px`). The hub (`selfhostr.io`) has no
 
 ### 4.5 Support block
 
-On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and in the README. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Sponsor us on GitHub** (`https://github.com/sponsors/selfhostr`) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
+On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`). Crypto addresses appear on the sites only, never in a repository. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Sponsor us on GitHub** (`https://github.com/sponsors/selfhostr`) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
 
 **Address component** (`.wl`, one markup and one script for all sites). No address appears in the HTML in clear text: each entry stores it Base64-encoded in `data-a`. Logos are monochrome (`currentColor`), never the brand colours. A click decodes the address, copies it, and shows it below the line so it can be checked.
 
@@ -254,8 +255,6 @@ On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and
 ```
 
 Entries are 44 px tall, radius 10, hairline border, logo 18 px. Addresses are taken from the organization's published list (see the README of any repository), never retyped.
-
-**Supporters** are named on the hub, in the support section, under "Supported by": name, link, country. There is no separate page.
 
 ### 4.6 Languages and URLs
 
@@ -393,9 +392,34 @@ docker-compose.yml  Dockerfile  .env.example
 
 ### 7.2 README
 
-In this order:
+Every README has the same shape and stays short, about 150 lines at most: details belong in the docs, with a link. Use the same section names in this order, and the project name as written in section 2:
 
-1. Centered header: banner or logo, one-sentence description in bold, badges (CI, docs, OpenSSF Best Practices, OpenSSF Scorecard, MIT), links **Website** · **Documentation**, one screenshot.
+1. Centered header, in HTML, exactly this shape and nothing else in it:
+
+```html
+<div align="center">
+
+<a href="https://<name>.selfhostr.io"><img src=".github/assets/banner.svg" alt="<name>: <tagline>" width="100%"></a>
+
+<h3>One sentence that says what it is.</h3>
+
+<a href="https://<name>.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-site.svg" alt="Website" height="40"></a>
+<a href="https://<name>.selfhostr.io/docs/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-docs.svg" alt="Documentation" height="40"></a>
+<a href="https://<name>.selfhostr.io/demo/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-demo.svg" alt="Live demo" height="40"></a>
+<a href="https://github.com/selfhostr/<name>/releases"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-releases.svg" alt="Releases" height="40"></a>
+
+<br><br>
+
+[CI badge] [OpenSSF Scorecard badge] [OpenSSF Best Practices badge, if the project has one] [MIT badge]
+
+<br><br>
+
+<img src="docs/assets/screenshot.png" alt="..." width="100%">
+
+</div>
+```
+
+   Banner: `.github/assets/banner.svg`, 1280 x 280, ground `#07080a` with the 44 px grid, project logo at the left, the name, a short tagline, "a selfhostr project" at the bottom right. Keep only the listed badges, in the default flat style: no language, test count, stack or version badges. Leave out the demo or releases button if the project has neither.
 2. **Overview**: 3 bullets. End with "Free, for good. MIT licence, no paid edition."
 3. **Quick start**: Docker commands, first login, what to do next. Where to back up.
 4. What it does / what it watches / features: concrete list.
@@ -410,13 +434,8 @@ In this order:
 
 <name> is free and has no company behind it. If it saves you time, you can support its development:
 
-- **GitHub Sponsors** (recurring or one-off): [github.com/sponsors/selfhostr](https://github.com/sponsors/selfhostr)
-- **Bitcoin**: `…`
-- **Ethereum**: `…`
-- **Solana**: `…`
+[Sponsor us on GitHub](https://github.com/sponsors/selfhostr), recurring or one-off.
 ```
-
-Copy the addresses from an existing repository README, never retype them.
 
 ### 7.3 Licence, contributing, security
 
@@ -464,14 +483,22 @@ Outside the gate: CodeQL, a weekly Trivy scan of the published images and an OSV
 - **Best Practices**: every public repository earns the OpenSSF Best Practices badge (passing, then silver) and shows it in the README.
 - **Scorecard**: `scorecard.yml` runs on push to `main`, weekly and on branch-protection changes, publishes results, and the badge is in the README. Aim for 8 or more out of 10. The checks that matter most here: Pinned-Dependencies, Token-Permissions, Branch-Protection, Code-Review, Signed-Releases, Dependency-Update-Tool, SAST, Security-Policy, Vulnerabilities, License, Fuzzing.
 
+### 7.8 Sponsor button
+
+Money goes through GitHub Sponsors: [github.com/sponsors/selfhostr](https://github.com/sponsors/selfhostr).
+
+- Every repository shows the **Sponsor** button in its right-hand column. Turn it on with *Settings > General > Features > Sponsorships*.
+- Do not add a `FUNDING.yml` to a project: all repositories inherit `.github/FUNDING.yml` from this repository.
+- READMEs and docs mention GitHub Sponsors only. Crypto addresses stay on the sites (4.5).
+
 ## 8. New project checklist
 
 In this order.
 
 1. Pick a lowercase name; check `<name>.selfhostr.io`, `selfhostr/<name>` and `ghcr.io/selfhostr/<name>` are free.
 2. Choose an accent (3.2) and draw the logo on the 64 grid (3.3).
-3. Create the repository under `selfhostr` with MIT licence, `dev` as the working branch, rulesets (7.4) and security features on.
-4. Add the root files and `.github/` of 7.1, `CODEOWNERS` with both owners, README in the order of 7.2 including the Support section.
+3. Create the repository under `selfhostr` with MIT licence, `dev` as the working branch, rulesets (7.4), security features on and the Sponsor button on (7.8).
+4. Add the root files and `.github/` of 7.1, `CODEOWNERS` with both owners, README in the shape of 7.2, with its banner and the Support section.
 5. Make it run with `docker compose up -d` from a published image; write `.env.example`; add CI (7.5) with pinned actions (7.6) and the release workflow with SBOM, provenance and signatures.
 6. Write `docs/` and add the project config to the docs kit (section 5); check links.
 7. Build the site: tokens, top bar, hero with plates and rotating word, interactive animation, features with "what it does not do", download with Support block, footer and selfhostr bar, 404 (section 4).
@@ -479,6 +506,6 @@ In this order.
 9. Build the static demo with fictional data and its CSP (4.9).
 10. Run the checks: 390 px without horizontal scroll, keyboard only, reduced motion, contrast, headers, no inline style, no external request.
 11. Create the Cloudflare Pages project `<name>`, point `<name>.selfhostr.io` at it, deploy.
-12. Add the project to the selfhostr bar of every site, to the organization profile (`profile/README.md` in this repository) and to the hub site.
+12. Add the project to the hub site, to the organization profile (`profile/README.md` in this repository, with its logo in `profile/assets/` and in the banner) and to the table in `SECURITY.md`.
 13. Apply for the OpenSSF Best Practices badge, enable Scorecard, add both badges to the README.
 14. Tag `v0.1.0` from `main` only when the owners agree.
