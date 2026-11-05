@@ -240,12 +240,12 @@ Links are 40 px tall, `14px` (last line `13px`). The hub (`selfhostr.io`) has no
 
 ### 4.5 Support block
 
-On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and in the README. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Support us on GitHub Sponsors** (`https://github.com/sponsors/selfhostr) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
+On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and in the README. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Sponsor us on GitHub** (`https://github.com/sponsors/selfhostr`) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
 
 **Address component** (`.wl`, one markup and one script for all sites). No address appears in the HTML in clear text: each entry stores it Base64-encoded in `data-a`. Logos are monochrome (`currentColor`), never the brand colours. A click decodes the address, copies it, and shows it below the line so it can be checked.
 
 ```html
-<div class="sup-line"><a class="btn btn-primary" href="https://github.com/sponsors/selfhostr">Support us on GitHub Sponsors</a>
+<div class="sup-line"><a class="btn btn-primary" href="https://github.com/sponsors/selfhostr">Sponsor us on GitHub</a>
 <ul class="wl">
 <li class="wl-row" data-a="[base64 of the address]"><button class="wl-chip" type="button" aria-label="Copy the Bitcoin address" title="Copy" data-copied="Copied"><svg viewBox="0 0 24 24" aria-hidden="true">…</svg><span>Bitcoin</span></button></li>
 </ul>
@@ -410,7 +410,7 @@ In this order:
 
 <name> is free and has no company behind it. If it saves you time, you can support its development:
 
-- **GitHub Sponsors** (recurring): [GitHub Sponsors.com/selfhostr](https://github.com/sponsors/selfhostr)
+- **GitHub Sponsors** (recurring or one-off): [github.com/sponsors/selfhostr](https://github.com/sponsors/selfhostr)
 - **Bitcoin**: `…`
 - **Ethereum**: `…`
 - **Solana**: `…`

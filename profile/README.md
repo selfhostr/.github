@@ -9,7 +9,7 @@
 <a href="https://selfhostr.io"><img src="https://img.shields.io/badge/website-selfhostr.io-2fd17c?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=17181c" alt="Website: selfhostr.io"></a>
 <a href="https://selfhostr.io"><img src="https://img.shields.io/badge/licence-MIT-34373e?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=17181c" alt="Licence: MIT"></a>
 <a href="https://selfhostr.io"><img src="https://img.shields.io/badge/runs%20on-Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white&labelColor=17181c" alt="Runs on Docker"></a>
-<a href="https://github.com/sponsors/selfhostr"><img src="https://img.shields.io/badge/support-GitHub Sponsors-f96854?style=for-the-badge&logo=GitHub Sponsors&logoColor=white&labelColor=17181c" alt="Support us on GitHub Sponsors"></a>
+<a href="https://github.com/sponsors/selfhostr"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white&labelColor=17181c" alt="Sponsor us on GitHub"></a>
 
 <br>
 
