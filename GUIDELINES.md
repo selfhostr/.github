@@ -390,6 +390,8 @@ docs/            (section 5)
 docker-compose.yml  Dockerfile  .env.example
 ```
 
+Equivalent names are accepted where a project already uses them, because renaming breaks badges and required checks: `compose.yaml` for `docker-compose.yml`, `integration.yml` for `ci.yml`, a `docker/` folder for a root `Dockerfile`. New projects use the names above. `security.yml` may be left out while Dependabot alerts, CodeQL and Scorecard are all on.
+
 ### 7.2 README
 
 Every README has the same shape and stays short, about 150 lines at most: details belong in the docs, with a link. Use the same section names in this order, and the project name as written in section 2:
@@ -442,7 +444,8 @@ Every README has the same shape and stays short, about 150 lines at most: detail
 
 ### 7.4 Branches, pull requests, releases
 
-- `main` is stable, `dev` is where work lands. Feature branches `feat/…`, `fix/…`, `docs/…`, `chore/…` open a PR **into `dev`**. `main` only receives `dev` through a PR. Never push directly to either.
+- `main` is stable. A project that publishes an `:edge` image also has `dev`, where work lands; the others work from feature branches straight into `main`, and the rules below that mention `dev` then apply to `main`.
+- With a `dev` branch: Feature branches `feat/…`, `fix/…`, `docs/…`, `chore/…` open a PR **into `dev`**. `main` only receives `dev` through a PR. Never push directly to either.
 - Rulesets: the default branch of every repository refuses deletion and force pushes and requires a pull request with one approval (stale approvals are dismissed). Where a `dev` branch exists it gets the same rules. Required status checks are added once a project's check names are stable, and tags `v*` can only be created by admins. Organization owners may bypass, so that the two of us can still ship alone; this is a deliberate choice and it lowers the Scorecard Branch-Protection and Code-Review results.
 - One topic per PR, Conventional Commit title, template filled in (what, how, screenshots for UI, checklist). Merge when required checks are green and an owner approved.
 - Every push to `dev` publishes the `:edge` image. A release is a `vX.Y.Z` tag on `main` after the owners agree: the workflow checks the tag against the version file, builds, signs, publishes the GitHub release with notes from `CHANGELOG.md`, and pushes `X.Y.Z`, `X.Y` and `latest`.
