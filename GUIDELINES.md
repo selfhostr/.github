@@ -2,7 +2,7 @@
 
 How a selfhostr project looks, reads and is built. Written so that anyone, person or program, can start a new project that sits next to the existing ones without asking. Free to read and reuse.
 
-Reference implementations, all public: [dumbmonit](https://github.com/selfhostr/dumbmonit), [suckerpot](https://github.com/selfhostr/suckerpot), [orch](https://github.com/selfhostr/orch), [djsnake](https://github.com/selfhostr/djsnake), [kegtrack](https://github.com/selfhostr/kegtrack) and their sites, for example <https://orch.selfhostr.io> (view source, read `/assets/site.css`).
+Reference implementations, all public: [dumbmonit](https://github.com/selfhostr/dumbmonit), [suckerpot](https://github.com/selfhostr/suckerpot), [orch](https://github.com/selfhostr/orch), [djsnake](https://github.com/selfhostr/djsnake), [kegtrack](https://github.com/selfhostr/kegtrack), [dmsforall](https://github.com/selfhostr/dmsforall) and their sites, for example <https://orch.selfhostr.io> (view source, read `/assets/site.css`).
 
 Words: **must** is a rule, **should** is the default, **may** is free. Where existing projects differ, the section says so and gives the rule for new ones.
 
@@ -25,7 +25,7 @@ Words: **must** is a rule, **should** is the default, **may** is free. Where exi
 
 | Thing | Rule | Example |
 |---|---|---|
-| Project name in prose | As written in the README title. Lowercase for newer projects, product-cased for the two flagship names | `orch`, `djsnake`, `kegtrack`, DumbMonit, SuckerPot |
+| Project name in prose | As written in the README title. Lowercase for newer projects, product-cased for the two flagship names | `orch`, `djsnake`, `kegtrack`, `dmsforall`, DumbMonit, SuckerPot |
 | New project name | **Lowercase, one word, no hyphen, no version** | `orch` |
 | Repository | `github.com/selfhostr/<name>`, lowercase | `selfhostr/orch` |
 | Site | `<name>.selfhostr.io` | `https://orch.selfhostr.io` |
@@ -88,8 +88,9 @@ One hue per project, used for the logo, the rotating hero word, the focus of the
 | orch | `#e8743b` | `#f08a4b` | `232 116 59` |
 | djsnake | `#ff3b4e` | `#ff6b78` | `255 59 78` |
 | kegtrack | `#e8a317` | `#f4bb45` | `232 163 23` |
+| dmsforall | `#22b8cf` | `#66d9e8` | `34 184 207` |
 
-A new accent must be clearly distinct from the five above, reach 4.5:1 for `--accent-ink` on `--c-canvas`, and not be a status hue (no green close to `#2fd17c`, no red close to `#ff5c5c`).
+A new accent must be clearly distinct from the six above, reach 4.5:1 for `--accent-ink` on `--c-canvas`, and not be a status hue (no green close to `#2fd17c`, no red close to `#ff5c5c`).
 
 ### 3.3 Logo
 
