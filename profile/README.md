@@ -21,7 +21,6 @@
 Monitoring in one container: servers, network gear, hypervisors, storage and websites.
 <br><br>
 <a href="https://dumbmonit.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/dumbmonit"><b>Repository</b></a> · <a href="https://dumbmonit.selfhostr.io/docs/">Docs</a>
-&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/dumbmonit?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of DumbMonit">
 </td>
 </tr>
 <tr>
@@ -31,7 +30,6 @@ Monitoring in one container: servers, network gear, hypervisors, storage and web
 An open-source honeypot that tells each attack in one sentence and reports the servers behind it.
 <br><br>
 <a href="https://suckerpot.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/suckerpot"><b>Repository</b></a> · <a href="https://suckerpot.selfhostr.io/docs/">Docs</a>
-&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/suckerpot?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of SuckerPot">
 </td>
 </tr>
 <tr>
@@ -41,7 +39,6 @@ An open-source honeypot that tells each attack in one sentence and reports the s
 A shared to-do list for teams. Tasks run on a teammate's machine and come back as pull requests.
 <br><br>
 <a href="https://orch.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/orch"><b>Repository</b></a> · <a href="https://orch.selfhostr.io/docs/">Docs</a>
-&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/orch?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of orch">
 </td>
 </tr>
 <tr>
@@ -51,7 +48,6 @@ A shared to-do list for teams. Tasks run on a teammate's machine and come back a
 A Discord music bot for your own server, with the video and the lyrics in sync on a web page.
 <br><br>
 <a href="https://djsnake.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/djsnake"><b>Repository</b></a> · <a href="https://djsnake.selfhostr.io/docs/">Docs</a>
-&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/djsnake?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of djsnake">
 </td>
 </tr>
 <tr>
@@ -61,7 +57,6 @@ A Discord music bot for your own server, with the video and the lyrics in sync o
 QR-code tracking for returnable kegs: every move in the cellar or at the customer is one scan.
 <br><br>
 <a href="https://kegtrack.selfhostr.io"><b>Website</b></a> · <a href="https://github.com/selfhostr/kegtrack"><b>Repository</b></a> · <a href="https://kegtrack.selfhostr.io/docs/">Docs</a>
-&nbsp;&nbsp;<img src="https://img.shields.io/github/stars/selfhostr/kegtrack?style=flat-square&logo=github&label=stars&labelColor=17181c&color=34373e" alt="GitHub stars of kegtrack">
 </td>
 </tr>
 </table>
@@ -73,6 +68,6 @@ and we are always honest about what a tool does and what it does not.
 
 <br>
 
-**[Visit selfhostr.io](https://selfhostr.io)** · **[Support the projects](https://selfhostr.io/#support)** · **[Guidelines](https://github.com/selfhostr/.github/blob/main/GUIDELINES.md)**
+**[Visit selfhostr.io](https://selfhostr.io)** · **[Support the projects](https://selfhostr.io/#support)** · **[Security](https://github.com/selfhostr/.github/blob/main/SECURITY.md)** · **[Guidelines](https://github.com/selfhostr/.github/blob/main/GUIDELINES.md)**
 
 </div>

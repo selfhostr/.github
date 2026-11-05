@@ -225,38 +225,37 @@ Sticky, 52 px, `rgb(7 8 10 / .92)` with `backdrop-filter:blur(10px)`, bottom bor
 
 ### 4.4 Footer and selfhostr bar
 
-Same on every site. Two rows: the project row (brand, links) and the **selfhostr bar** (link to the hub and the list of all projects, the current one marked `aria-current`).
+Same on every site. The project row (brand, links), then one small line inside the same footer, with no border or background of its own: the selfhostr logo, "A selfhostr project" and "Discover all our projects", as a single link to the hub. Projects are not listed here: the hub lists them.
 
 ```html
 <footer class="sh-foot"><div class="wrap">
 <div class="sh-f-main"><a class="sh-f-brand" href="/">[logo 24]orch</a>
 <nav aria-label="Footer"><a href="/features/">Features</a><a href="/download/">Download</a><a href="https://orch.selfhostr.io/demo/">Demo</a><a href="https://orch.selfhostr.io/docs/">Docs</a><a href="https://github.com/selfhostr/orch">GitHub</a><a href="/download/#support">Support the project</a><a href="https://github.com/selfhostr/orch/blob/main/LICENSE">MIT licence</a></nav></div>
-<div class="sh-f-bar"><a class="sh-home" href="https://selfhostr.io">[selfhostr logo 18]<span>A <b>selfhostr</b> project</span></a>
-<ul aria-label="selfhostr projects"><li><a href="https://dumbmonit.selfhostr.io">[logo 18]DumbMonit</a></li>…<li><a aria-current="true" href="https://orch.selfhostr.io">[logo 18]orch</a></li></ul></div>
+<div class="sh-f-bar"><a class="sh-home" href="https://selfhostr.io">[selfhostr logo 18]<span>A <b>selfhostr</b> project</span><span class="sh-all">Discover all our projects</span></a></div>
 <p class="sh-note">Optional disclaimer line, 12px, --c-ink-3.</p>
 </div></footer>
 ```
 
-Links are 40 px tall, `14px` (bar `13px`). Add a project to the bar on every site when it is published.
+Links are 40 px tall, `14px` (last line `13px`). The hub (`selfhostr.io`) has no footer.
 
 ### 4.5 Support block
 
-On `/download/#support` and in the README. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then a primary button **Support us on GitHub Sponsors** (`https://github.com/sponsors/selfhostr), then "Or send crypto" with the address component.
+On `/download/#support` (DumbMonit: `/community/#support`, hub: `/#support`) and in the README. Wording: "Every selfhostr project is free and has no company behind it. If one saves you time, a donation pays for the test hardware and for the time it takes." Then **one line**: the primary button **Support us on GitHub Sponsors** (`https://github.com/sponsors/selfhostr) on the left, Bitcoin, Ethereum and Solana on the right. No extra heading, no cards. On a phone the line wraps into two rows.
 
-**Masked address component** (`.wl`, one markup and one script for all sites). No address appears in the HTML in clear text: each row stores it Base64-encoded in `data-a`, shows `••••••••••••••••`, and decodes only on "show" or "copy".
+**Address component** (`.wl`, one markup and one script for all sites). No address appears in the HTML in clear text: each entry stores it Base64-encoded in `data-a`. Logos are monochrome (`currentColor`), never the brand colours. A click decodes the address, copies it, and shows it below the line so it can be checked.
 
 ```html
+<div class="sup-line"><a class="btn btn-primary" href="https://github.com/sponsors/selfhostr">Support us on GitHub Sponsors</a>
 <ul class="wl">
-<li class="wl-row" data-a="[base64 of the address]"><svg class="wl-coin" viewBox="0 0 24 24" aria-hidden="true">…</svg>
-<span class="wl-name">Bitcoin</span><code class="wl-addr">••••••••••••••••</code>
-<button class="wl-btn wl-show" type="button" aria-pressed="false" aria-label="Show the Bitcoin address" title="Show">[eye icon]</button>
-<button class="wl-btn wl-copy" type="button" aria-label="Copy the Bitcoin address" title="Copy" data-copied="Copied">[copy icon]</button></li>
+<li class="wl-row" data-a="[base64 of the address]"><button class="wl-chip" type="button" aria-label="Copy the Bitcoin address" title="Copy" data-copied="Copied"><svg viewBox="0 0 24 24" aria-hidden="true">…</svg><span>Bitcoin</span></button></li>
 </ul>
-<p class="wl-note">Check the first and last characters after pasting. We never ask for crypto by message.</p>
-<noscript><p class="wl-note">These addresses need JavaScript to appear. See the README of any selfhostr repository.</p></noscript>
+<p class="wl-out" role="status" hidden><span class="wl-state"></span><code class="wl-addr"></code><span class="wl-note">Check the first and last characters after pasting. We never ask for crypto by message.</span></p>
+<noscript><p class="wl-out">These addresses need JavaScript to appear. See the README of any selfhostr repository.</p></noscript></div>
 ```
 
-Row: `min-height:56px`, radius 12, border `#23252a`, background `#111215`; buttons 44 x 44; address in JetBrains Mono 12.5 px; when shown it wraps (`overflow-wrap:anywhere`). Coins: Bitcoin, Ethereum, Solana. Copy uses `navigator.clipboard`; without it, "copy" reveals the address. Addresses are taken from the organization's published list (see the README of any repository), never retyped.
+Entries are 44 px tall, radius 10, hairline border, logo 18 px. Addresses are taken from the organization's published list (see the README of any repository), never retyped.
+
+**Supporters** are named on the hub, in the support section, under "Supported by": name, link, country. There is no separate page.
 
 ### 4.6 Languages and URLs
 
@@ -430,7 +429,7 @@ Copy the addresses from an existing repository README, never retype them.
 ### 7.4 Branches, pull requests, releases
 
 - `main` is stable, `dev` is where work lands. Feature branches `feat/…`, `fix/…`, `docs/…`, `chore/…` open a PR **into `dev`**. `main` only receives `dev` through a PR. Never push directly to either.
-- Rulesets: `dev` and `main` require a pull request, code owner review, stale review dismissal, no force push, no deletion, and the required status checks. Tags `v*` can only be created by admins.
+- Rulesets: the default branch of every repository refuses deletion and force pushes and requires a pull request with one approval (stale approvals are dismissed). Where a `dev` branch exists it gets the same rules. Required status checks are added once a project's check names are stable, and tags `v*` can only be created by admins. Organization owners may bypass, so that the two of us can still ship alone; this is a deliberate choice and it lowers the Scorecard Branch-Protection and Code-Review results.
 - One topic per PR, Conventional Commit title, template filled in (what, how, screenshots for UI, checklist). Merge when required checks are green and an owner approved.
 - Every push to `dev` publishes the `:edge` image. A release is a `vX.Y.Z` tag on `main` after the owners agree: the workflow checks the tag against the version file, builds, signs, publishes the GitHub release with notes from `CHANGELOG.md`, and pushes `X.Y.Z`, `X.Y` and `latest`.
 - Release assets carry checksums (`.sha256`) and Sigstore keyless signatures (`.sigstore.json`). Container images carry an SBOM (SPDX) and a SLSA build provenance attestation, pushed with the image to `ghcr.io/selfhostr/<name>`. Verification:
