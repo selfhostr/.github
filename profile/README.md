@@ -4,12 +4,7 @@
 
 <h3>We are sysadmins. When something bothers us, we build it.</h3>
 
-<a href="https://selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-website.svg" alt="Website: selfhostr.io" height="40"></a>
-<a href="https://github.com/sponsors/selfhostr"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-sponsor.svg" alt="Sponsor us on GitHub" height="40"></a>
-<a href="https://github.com/selfhostr/.github/blob/main/SECURITY.md"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-security.svg" alt="Security policy" height="40"></a>
-<a href="https://github.com/selfhostr/.github/blob/main/GUIDELINES.md"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/btn-guidelines.svg" alt="Project guidelines" height="40"></a>
-
-<br>
+<p><a href="https://selfhostr.io">selfhostr.io</a> &nbsp;·&nbsp; <a href="https://github.com/sponsors/selfhostr">Sponsor</a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/.github/blob/main/SECURITY.md">Security</a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/.github/blob/main/GUIDELINES.md">Guidelines</a></p>
 
 <table>
 <tr>
@@ -62,8 +57,6 @@
 </tr>
 </table>
 
-<br>
-
 <table>
 <tr>
 <td width="33%" align="center" valign="top"><b>Open source and free</b><br><sub>Every project is, and it stays that way.</sub></td>
@@ -71,8 +64,6 @@
 <td width="33%" align="center" valign="top"><b>Honest</b><br><sub>We say what a tool does and what it does not.</sub></td>
 </tr>
 </table>
-
-<br>
 
 <a href="https://selfhostr.io/#support">Support the projects</a> &nbsp;·&nbsp; <a href="https://selfhostr.io">Visit selfhostr.io</a>
 
