@@ -8,8 +8,8 @@ Please do not open a public issue. Use GitHub's private reporting on the reposit
 
 | Project | Report privately |
 | --- | --- |
-| DumbMonit | [selfhostr/dumbmonit](https://github.com/selfhostr/dumbmonit/security/advisories/new) |
-| SuckerPot | [selfhostr/suckerpot](https://github.com/selfhostr/suckerpot/security/advisories/new) |
+| dumbmonit | [selfhostr/dumbmonit](https://github.com/selfhostr/dumbmonit/security/advisories/new) |
+| suckerpot | [selfhostr/suckerpot](https://github.com/selfhostr/suckerpot/security/advisories/new) |
 | orch | [selfhostr/orch](https://github.com/selfhostr/orch/security/advisories/new) |
 | djsnake | [selfhostr/djsnake](https://github.com/selfhostr/djsnake/security/advisories/new) |
 | kegtrack | [selfhostr/kegtrack](https://github.com/selfhostr/kegtrack/security/advisories/new) |
