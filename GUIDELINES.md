@@ -12,13 +12,13 @@ Words: **must** is a rule, **should** is the default, **may** is free. Where exi
 
 - **Honest about limits.** Every project has a "Limits" or "What it does not do" section, on the site and in the README. Keep every warning at full strength. Never oversell, never write "military grade", "blazing", "revolutionary".
 - **Simple.** Few moving parts, sane defaults, one way to do a thing. If a feature needs a paragraph of caveats, cut it or document the caveat first.
-- **Open source, MIT, free for good.** Licence is MIT. No paid edition, no feature held back, no open-core. Say so: "MIT, no paid edition". Dependencies must be under OSI-approved licences, enforced in CI.
+- **Open source, MIT, free for good.** Licence is MIT. No paid edition, no feature held back, no open-core. Say so: "MIT, no paid edition". Dependencies and Docker images must be open source under OSI-approved licences, enforced in CI. Source-available licences are not allowed (RSAL, SSPL, the Business Source License, Timescale License), and every repository runs a licence check in CI.
 - **Docker first.** The main install path is `docker compose up -d` from a published image. Show it as three commands or fewer.
 - **Audience: sysadmins.** People who run a homelab, a server room or a team's infrastructure. Write for them: exact commands, ports, paths, what is stored where, how to back up, how to upgrade. No marketing fog.
 - **Never call a project "small", "tiny" or "lightweight" as a selling point.** Describe what it does. (Naming a real limit of the audience, such as "teams who trust each other", is fine.)
 - **Authors by handle only.** People appear as their GitHub handle (`@laupernoe`, `@Theroxat`), never a real name, photo or email. No member cards.
 - **Voice.** Plain, short, concrete. Active voice. Explain it as you would to a friend who runs a home server. English is the source language of every text. No em dash anywhere (comma, colon or a new sentence). No emoji in prose or UI copy. Numbers stay exact.
-- **No third parties on the site.** No analytics, no trackers, no external fonts, no CDN scripts. Everything is served from the site itself.
+- **No third parties on the site.** No analytics, no trackers, no external fonts, no CDN scripts, no third-party avatars or embeds. Any runtime load from a third party leaks the visitor's IP address. Everything is served from the site itself.
 - **Claims must be checkable.** Anything the site says (version, supported devices, features) comes from the repository, the latest release or the docs. Do not state what you cannot point to.
 
 ## 2. Naming
@@ -66,8 +66,8 @@ color-scheme:dark;
 --c-primary:#eceef1;--c-on-primary:#07080a;
 --shadow-lift:0 1px 0 rgb(255 255 255 / .02) inset,0 1px 2px rgb(0 0 0 / .5);
 --shadow-float:0 2px 8px rgb(0 0 0 / .5),0 24px 48px -16px rgb(0 0 0 / .8);
---font-ui:'Inter','Segoe UI',system-ui,sans-serif;
---font-code:'JetBrains Mono',ui-monospace,monospace;
+--font-ui:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+--font-code:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 --radius-plate:6px;--radius-btn:8px;--radius-card:12px;--gutter:16px;
 --ease:cubic-bezier(.16,1,.3,1);
 --accent:#7da9ff;--accent-ink:#b3ccff;--accent-rgb:125 169 255;   /* per project */
@@ -110,8 +110,11 @@ Example (orch):
 
 ### 3.4 Type
 
-- **Inter** (variable, weights 100 to 900) for text, **JetBrains Mono** (400, 500) for code, addresses, versions, eyebrows, numbers in tables. Both SIL OFL, self-hosted as woff2 (`/assets/fonts/inter-latin-wght-normal.woff2`), `font-display:swap`, the main font preloaded.
-- dumbmonit's site and app use Geist and Geist Mono instead (SIL OFL, self-hosted). This is a legacy difference. **New projects use Inter and JetBrains Mono.**
+- Every selfhostr app, site, docs and demo uses **Inter** (weights 400, 500, 600) for UI and text, and **JetBrains Mono** (400, 500) for code, ids and tabular numbers (addresses, hashes, versions, eyebrows, numbers in tables). No other font family.
+- Both are OFL-1.1 and **self-hosted**, never Google Fonts or any CDN. With npm, use `@fontsource-variable/inter` and `@fontsource-variable/jetbrains-mono`. Without npm, vendor the woff2 files (latin and latin-ext subsets) from those packages into the repository with their OFL licence file, and declare them with `@font-face`, `font-display:swap`, the main font preloaded. CSP: `font-src 'self'`.
+- Fallback stacks: `"Inter", system-ui, -apple-system, "Segoe UI", sans-serif` and `"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace`.
+- One exception: djsnake's clip-page themes may each add one self-hosted display face.
+- Geist and Geist Mono are no longer used: dumbmonit moves to Inter and JetBrains Mono.
 - Body `.9375rem` (15 px), line height 1.6. Headings weight 600, `letter-spacing:-.02em`, line height 1.2, `text-wrap:balance`.
 - `h1` hero: `clamp(2.125rem,1.4rem + 3vw,3.4rem)`, `letter-spacing:-.035em`, line height 1.08. Page `h1`: `clamp(1.75rem,1.3rem + 2vw,2.5rem)`. Section `h2`: `clamp(1.375rem,1.1rem + 1vw,1.75rem)`.
 - Eyebrow (small label above a heading): JetBrains Mono `.6875rem`, weight 500, `letter-spacing:.06em`, uppercase, `--c-ink-3`.
@@ -293,7 +296,7 @@ Every page, checked by the build (fail on any miss):
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'none'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 ```
@@ -346,7 +349,7 @@ The product UI is not the marketing site: it is where the work happens. dumbmoni
 - **Dark first, calm, near-black ground.** Neutral surfaces, hairline borders, colour only where it means something. dumbmonit ground `#07080a`, suckerpot `#0b0c0e`. No decorative gradients. New apps start from the tokens of section 3.1 (dumbmonit's "obsidian" theme: `html.obsidian` in `web/src/app.css`) and add a light theme only when users need it.
 - **Tokens only.** Every colour comes from a CSS variable (`--c-*` in dumbmonit, `--bg`, `--surface`, `--border`, `--fg` in suckerpot). No hex in components. Contrast of every token pair is tested (suckerpot ships `contrast.test.ts`).
 - **Density**: the app's base text is 13 px (dumbmonit body `.8125rem`, suckerpot `sm` 13/20), tables and panels compact, line height at least 1.5.
-- **Fonts**: Inter for UI, JetBrains Mono (or Geist Mono in dumbmonit) for addresses, hashes, commands, IDs and numbers in tables; tabular numbers. Self-hosted.
+- **Fonts**: Inter for UI, JetBrains Mono for addresses, hashes, commands, IDs and numbers in tables; tabular numbers. Self-hosted (3.4).
 - **Status is never colour alone.** Icon plus word plus colour: dumbmonit `Plate` (`signal`, `info`, `advisory`, `warning`, `ghost`), suckerpot severity (info, notice, warning, severe, each with its own icon). **Red is rare and means the worst case.**
 - **Primary action is neutral** (the ink colour inverted), accent hues carry meaning, not branding.
 - **Primitives** live in one folder (`web/src/lib/ui/` in dumbmonit, `web/src/components/ui/` in suckerpot): Button, Panel/Card, Plate/Badge, EmptyState, ErrorNotice, Skeleton, Toast, Tabs, Field. Do not add one-off styles; extend a primitive.
@@ -368,7 +371,7 @@ The product UI is not the marketing site: it is where the work happens. dumbmoni
 | Themes | Obsidian (dark default) plus a light console theme and public status pages | Dark and light, follows the system | Dark default; light optional, same token names |
 | UI language | Nine locales with Paraglide | English only | **Nine locales** if the app is for end users (below); English only is acceptable for an expert tool, and then say so |
 | Brand hue in the app | Status hues only | No brand hue, hues = sensor family | No brand hue in the app. The accent is for sites |
-| Type | Geist and Geist Mono | Inter and JetBrains Mono | Inter and JetBrains Mono |
+| Type | Inter and JetBrains Mono | Inter and JetBrains Mono | Inter and JetBrains Mono |
 
 **i18n approach (dumbmonit, the model to copy)**
 
