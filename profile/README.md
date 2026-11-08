@@ -55,6 +55,22 @@
 <p><a href="https://dmsforall.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/dmsforall"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://dmsforall.selfhostr.io/docs/"><b>Docs</b></a></p>
 </td>
 </tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<br>
+<a href="https://mccb.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/mccb.svg" alt="" width="72" height="72"></a>
+<h3><a href="https://mccb.selfhostr.io">mccb</a></h3>
+<p>Mailbox migration: PST, Exchange, Microsoft 365 or IMAP to IMAP, CalDAV, CardDAV, JMAP or Exchange, with no duplicates.</p>
+<p><a href="https://mccb.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/mccb"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://mccb.selfhostr.io/docs/"><b>Docs</b></a></p>
+</td>
+<td width="50%" align="center" valign="top">
+<br>
+<a href="https://mccs.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/mccs.svg" alt="" width="72" height="72"></a>
+<h3><a href="https://mccs.selfhostr.io">mccs</a></h3>
+<p>A setup wizard under your brand: a step-by-step guide for mail, calendar and contacts on your users' devices.</p>
+<p><a href="https://mccs.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/mccs"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://mccs.selfhostr.io/docs/"><b>Docs</b></a></p>
+</td>
+</tr>
 </table>
 
 <table>
