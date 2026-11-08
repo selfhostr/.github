@@ -14,6 +14,8 @@ Please do not open a public issue. Use GitHub's private reporting on the reposit
 | djsnake | [selfhostr/djsnake](https://github.com/selfhostr/djsnake/security/advisories/new) |
 | kegtrack | [selfhostr/kegtrack](https://github.com/selfhostr/kegtrack/security/advisories/new) |
 | dmsforall | [selfhostr/dmsforall](https://github.com/selfhostr/dmsforall/security/advisories/new) |
+| mccb | [selfhostr/mccb](https://github.com/selfhostr/mccb/security/advisories/new) |
+| mccs | [selfhostr/mccs](https://github.com/selfhostr/mccs/security/advisories/new) |
 
 Include the affected version, the steps to reproduce and the impact you see. We aim to acknowledge a report within 7 days and to give a first assessment within 14 days. We are two people, so these are goals rather than guarantees. We credit reporters who want to be named.
 
