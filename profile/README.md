@@ -11,14 +11,14 @@
 <td width="50%" align="center" valign="top">
 <br>
 <a href="https://dumbmonit.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/dumbmonit.svg" alt="" width="72" height="72"></a>
-<h3><a href="https://dumbmonit.selfhostr.io">DumbMonit</a></h3>
+<h3><a href="https://dumbmonit.selfhostr.io">dumbmonit</a></h3>
 <p>Monitoring in one container: servers, network gear, hypervisors, storage and websites.</p>
 <p><a href="https://dumbmonit.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/dumbmonit"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://dumbmonit.selfhostr.io/docs/"><b>Docs</b></a></p>
 </td>
 <td width="50%" align="center" valign="top">
 <br>
 <a href="https://suckerpot.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/suckerpot.svg" alt="" width="72" height="72"></a>
-<h3><a href="https://suckerpot.selfhostr.io">SuckerPot</a></h3>
+<h3><a href="https://suckerpot.selfhostr.io">suckerpot</a></h3>
 <p>An open-source honeypot that tells each attack in one sentence and reports the servers behind it.</p>
 <p><a href="https://suckerpot.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/suckerpot"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://suckerpot.selfhostr.io/docs/"><b>Docs</b></a></p>
 </td>
