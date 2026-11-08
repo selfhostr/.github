@@ -105,7 +105,7 @@ A new accent must be clearly distinct from the eight above, reach 4.5:1 for `--a
 Example (orch):
 
 ```html
-<svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#17181c"/><path d="M12 21c11 0 13 11 24 11M12 43c11 0 13-11 24-11M36 32h10" fill="none" stroke="#ecedef" stroke-width="4.5" stroke-linecap="round"/><circle cx="51" cy="32" r="5.5" fill="#e8743b"/></svg>
+<svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#17181c"/><path d="M32 32V14M32 32 47.6 41M32 32 16.4 41" fill="none" stroke="#ecedef" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="14" r="4.5" fill="#ecedef"/><circle cx="47.6" cy="41" r="4.5" fill="#ecedef"/><circle cx="16.4" cy="41" r="4.5" fill="#ecedef"/><circle cx="32" cy="32" r="7" fill="#e8743b"/></svg>
 ```
 
 ### 3.4 Type
