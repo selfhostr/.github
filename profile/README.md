@@ -76,7 +76,7 @@
 <br>
 <a href="https://redfish.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/redfish.svg" alt="" width="72" height="72"></a>
 <h3><a href="https://redfish.selfhostr.io">redfish</a></h3>
-<p>Run authorized phishing simulations and security awareness training. Multi org, with sending profiles, open and click tracking, and funnel reports. Alpha.</p>
+<p>Run authorized security awareness campaigns. Multi org, with sending profiles, open and click tracking, and funnel reports. Alpha.</p>
 <p><a href="https://redfish.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/redfish"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://redfish.selfhostr.io/docs/"><b>Docs</b></a></p>
 </td>
 <td width="50%" align="center" valign="top"></td>
