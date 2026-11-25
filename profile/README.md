@@ -6,8 +6,6 @@
 
 <p><b><a href="https://selfhostr.io/#support">Support the projects</a></b> &nbsp;·&nbsp; <b><a href="https://selfhostr.io">Visit selfhostr.io</a></b></p>
 
-<p><a href="https://selfhostr.io">selfhostr.io</a> &nbsp;·&nbsp; <a href="https://github.com/sponsors/selfhostr">Sponsor</a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/.github/blob/main/SECURITY.md">Security</a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/.github/blob/main/GUIDELINES.md">Guidelines</a></p>
-
 <table>
 <tr>
 <td width="50%" align="center" valign="top">
