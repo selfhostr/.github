@@ -26,38 +26,6 @@
 <tr>
 <td width="50%" align="center" valign="top">
 <br>
-<a href="https://orch.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/orch.png" alt="" width="72" height="72"></a>
-<h3><a href="https://orch.selfhostr.io">orch</a></h3>
-<p>A shared to-do list for teams. Tasks run on a teammate's machine and come back as pull requests.</p>
-<p><a href="https://orch.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/orch"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://orch.selfhostr.io/docs/"><b>Docs</b></a></p>
-</td>
-<td width="50%" align="center" valign="top">
-<br>
-<a href="https://djsnake.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/djsnake.svg" alt="" width="72" height="72"></a>
-<h3><a href="https://djsnake.selfhostr.io">djsnake</a></h3>
-<p>A Discord music bot for your own server, with the video and the lyrics in sync on a web page.</p>
-<p><a href="https://djsnake.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/djsnake"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://djsnake.selfhostr.io/docs/"><b>Docs</b></a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<br>
-<a href="https://kegtrack.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/kegtrack.svg" alt="" width="72" height="72"></a>
-<h3><a href="https://kegtrack.selfhostr.io">kegtrack</a></h3>
-<p>QR-code tracking for returnable kegs: every move in the cellar or at the customer is one scan.</p>
-<p><a href="https://kegtrack.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/kegtrack"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://kegtrack.selfhostr.io/docs/"><b>Docs</b></a></p>
-</td>
-<td width="50%" align="center" valign="top">
-<br>
-<a href="https://dmsforall.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/dmsforall.svg" alt="" width="72" height="72"></a>
-<h3><a href="https://dmsforall.selfhostr.io">dmsforall</a></h3>
-<p>Management software for Swiss garages: repair orders, invoices with a QR-bill, parts and time clocking. Alpha.</p>
-<p><a href="https://dmsforall.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/dmsforall"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://dmsforall.selfhostr.io/docs/"><b>Docs</b></a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<br>
 <a href="https://mccb.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/mccb.svg" alt="" width="72" height="72"></a>
 <h3><a href="https://mccb.selfhostr.io">mccb</a></h3>
 <p>Mailbox migration: PST, Exchange, Microsoft 365 or IMAP to IMAP, CalDAV, CardDAV, JMAP or Exchange, with no duplicates.</p>
@@ -79,7 +47,13 @@
 <p>Run authorized security awareness campaigns. Multi org, with sending profiles, open and click tracking, and funnel reports. Alpha.</p>
 <p><a href="https://redfish.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/redfish"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://redfish.selfhostr.io/docs/"><b>Docs</b></a></p>
 </td>
-<td width="50%" align="center" valign="top"></td>
+<td width="50%" align="center" valign="top">
+<br>
+<a href="https://dmsforall.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/dmsforall.svg" alt="" width="72" height="72"></a>
+<h3><a href="https://dmsforall.selfhostr.io">dmsforall</a></h3>
+<p>Management software for Swiss garages: repair orders, invoices with a QR-bill, parts and time clocking. Alpha.</p>
+<p><a href="https://dmsforall.selfhostr.io"><b>Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/dmsforall"><b>Repository</b></a> &nbsp;·&nbsp; <a href="https://dmsforall.selfhostr.io/docs/"><b>Docs</b></a></p>
+</td>
 </tr>
 </table>
 
