@@ -4,6 +4,8 @@
 
 <h3>We are sysadmins. When something bothers us, we build it.</h3>
 
+<p><b><a href="https://selfhostr.io/#support">Support the projects</a></b> &nbsp;·&nbsp; <b><a href="https://selfhostr.io">Visit selfhostr.io</a></b></p>
+
 <p><a href="https://selfhostr.io">selfhostr.io</a> &nbsp;·&nbsp; <a href="https://github.com/sponsors/selfhostr">Sponsor</a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/.github/blob/main/SECURITY.md">Security</a> &nbsp;·&nbsp; <a href="https://github.com/selfhostr/.github/blob/main/GUIDELINES.md">Guidelines</a></p>
 
 <table>
@@ -56,15 +58,5 @@
 </td>
 </tr>
 </table>
-
-<table>
-<tr>
-<td width="33%" align="center" valign="top"><b>Open source and free</b><br><sub>Every project is, and it stays that way.</sub></td>
-<td width="33%" align="center" valign="top"><b>Runs on Docker</b><br><sub>Built to stay simple to run on your own server.</sub></td>
-<td width="33%" align="center" valign="top"><b>Honest</b><br><sub>We say what a tool does and what it does not.</sub></td>
-</tr>
-</table>
-
-<a href="https://selfhostr.io/#support">Support the projects</a> &nbsp;·&nbsp; <a href="https://selfhostr.io">Visit selfhostr.io</a>
 
 </div>
