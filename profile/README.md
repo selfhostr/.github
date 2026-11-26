@@ -55,6 +55,16 @@
 <p><a href="https://dmsforall.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-website.svg" alt="Website" title="Website" width="22" height="22"></a> &nbsp;&nbsp; <a href="https://github.com/selfhostr/dmsforall"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-github.svg" alt="Repository on GitHub" title="Repository on GitHub" width="22" height="22"></a> &nbsp;&nbsp; <a href="https://dmsforall.selfhostr.io/docs/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-documentation.svg" alt="Documentation" title="Documentation" width="22" height="22"></a> &nbsp;&nbsp; <a href="https://dmsforall.selfhostr.io/demo/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-demo.svg" alt="Demo" title="Demo" width="22" height="22"></a></p>
 </td>
 </tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<br>
+<a href="https://djsnake.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/djsnake.svg" alt="" width="72" height="72"></a>
+<h3><a href="https://djsnake.selfhostr.io">djsnake</a></h3>
+<p>Open-source Discord music bot.</p>
+<p><a href="https://djsnake.selfhostr.io"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-website.svg" alt="Website" title="Website" width="22" height="22"></a> &nbsp;&nbsp; <a href="https://github.com/selfhostr/djsnake"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-github.svg" alt="Repository on GitHub" title="Repository on GitHub" width="22" height="22"></a> &nbsp;&nbsp; <a href="https://djsnake.selfhostr.io/docs/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-documentation.svg" alt="Documentation" title="Documentation" width="22" height="22"></a> &nbsp;&nbsp; <a href="https://djsnake.selfhostr.io/demo/"><img src="https://raw.githubusercontent.com/selfhostr/.github/main/profile/assets/icon-demo.svg" alt="Demo" title="Demo" width="22" height="22"></a></p>
+</td>
+<td width="50%" align="center" valign="top"></td>
+</tr>
 </table>
 
 </div>
